@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - FarmTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">FarmTech</div>
+        <nav>
+            <a href="./main.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./join.html" class="active">Join</a>
+        </nav>
+    </header>
+
+    
+    <section class="join">
+        <h1>Join FarmTech</h1>
+        <p>Become a part of our mission to empower farmers with technology.</p>
+
+       
+        <form action="submit_form.php" method="post" class="join-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="role">Select Role yoou want:</label>
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Choose your role</option>
+                <option value="Farmer">Farmer</option>
+                <option value="Technologist">Technologist</option>
+                <option value="Investor">In2vestor</option>
+                <option value="Partner">Partner</option>
+            </select>
+            <label for="message">Tell Us About Yourself 
+                :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Share your interest in FarmTech..."></textarea>
+            <button type="submit">Join Now</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 FarmTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
